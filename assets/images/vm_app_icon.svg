@@ -1,0 +1,53 @@
+<svg width="1024" height="1024" viewBox="0 0 680 680" xmlns="http://www.w3.org/2000/svg">
+  <title>VM App Icon</title>
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F0F1A"/>
+      <stop offset="100%" style="stop-color:#1A1035"/>
+    </linearGradient>
+    <linearGradient id="vg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6C63FF"/>
+      <stop offset="100%" style="stop-color:#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="mg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6584"/>
+      <stop offset="100%" style="stop-color:#FFB347"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6C63FF"/>
+      <stop offset="50%" style="stop-color:#FF6584"/>
+      <stop offset="100%" style="stop-color:#FFB347"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="40" y="40" width="600" height="600" rx="140" fill="url(#bg1)"/>
+  <rect x="40" y="40" width="600" height="600" rx="140" fill="none" stroke="url(#ring)" stroke-width="3.5" opacity="0.7"/>
+
+  <!-- Diamond accent -->
+  <polygon points="340,110 560,340 340,570 120,340" fill="none" stroke="url(#ring)" stroke-width="1.5" opacity="0.2"/>
+  <polygon points="340,150 520,340 340,530 160,340" fill="none" stroke="url(#ring)" stroke-width="1" opacity="0.12"/>
+
+  <!-- V -->
+  <line x1="148" y1="195" x2="295" y2="490" stroke="url(#vg)" stroke-width="44" stroke-linecap="round"/>
+  <line x1="295" y1="490" x2="350" y2="360" stroke="url(#vg)" stroke-width="44" stroke-linecap="round"/>
+
+  <!-- M -->
+  <line x1="350" y1="195" x2="350" y2="490" stroke="url(#mg)" stroke-width="44" stroke-linecap="round"/>
+  <line x1="350" y1="195" x2="435" y2="370" stroke="url(#mg)" stroke-width="44" stroke-linecap="round"/>
+  <line x1="435" y1="370" x2="532" y2="195" stroke="url(#mg)" stroke-width="44" stroke-linecap="round"/>
+  <line x1="532" y1="195" x2="532" y2="490" stroke="url(#mg)" stroke-width="44" stroke-linecap="round"/>
+
+  <!-- Center dot -->
+  <circle cx="350" cy="360" r="14" fill="white" opacity="0.9"/>
+  <circle cx="350" cy="360" r="7" fill="url(#ring)"/>
+
+  <!-- Corner dots -->
+  <circle cx="122" cy="122" r="7" fill="#6C63FF" opacity="0.5"/>
+  <circle cx="558" cy="122" r="7" fill="#FF6584" opacity="0.5"/>
+  <circle cx="122" cy="558" r="7" fill="#43E97B" opacity="0.5"/>
+  <circle cx="558" cy="558" r="7" fill="#FFB347" opacity="0.5"/>
+
+  <!-- Name -->
+  <text x="340" y="596" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="700" fill="white" opacity="0.35" letter-spacing="8">VIDHI</text>
+</svg>
