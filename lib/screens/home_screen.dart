@@ -370,7 +370,7 @@ class HomeScreen extends StatelessWidget {
       Container(width: 1, height: 36, color: AppColors.cardBorder);
 }
 
-//  Social Button 
+//  Social Button
 class _SocialButton extends StatelessWidget {
   final IconData icon;
   final String label;
@@ -531,6 +531,7 @@ class _FeaturedProjectCard extends StatelessWidget {
           // Arrow
           const SizedBox(width: 8),
           Icon(Icons.arrow_forward_ios_rounded, color: color, size: 14),
+          const SizedBox(height: 15),
         ],
       ),
     );

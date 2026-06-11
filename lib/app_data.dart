@@ -12,7 +12,7 @@ class AppData {
   static const String email = "mochividhi64@gmail.com";
   static const String phone = "+91 70416 84814";
   static const String location = "India";
-  static const String github = "https://github.com/vidhimochi";
+  static const String github = "https://github.com/FlutterApp0908/";
   static const String linkedin = "https://www.linkedin.com/in/vidhi-mochi";
 
   //My Skills
@@ -83,7 +83,7 @@ class AppData {
     },
     {
       "degree":
-          "Software Mobile Application Developement With Ai (Prompt Engineering)",
+          "Software Mobile Application Developement With AI (Prompt Engineering)",
       "EduPlace": "TCP India Official , Mehsana",
       "year": "June 2025 - June 2026 ",
     },

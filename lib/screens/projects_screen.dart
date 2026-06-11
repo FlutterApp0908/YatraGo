@@ -38,6 +38,7 @@ class ProjectsScreen extends StatelessWidget {
               child: _ProjectCard(project: p, color: color),
             );
           }),
+          const SizedBox(height: 75),
         ],
       ),
     );
@@ -71,8 +72,7 @@ class _ProjectCardState extends State<_ProjectCard> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-
-          // ── Colored top bar with emoji ──────────────────────────
+          // Colored top bar
           Container(
             width: double.infinity,
             padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 18),
@@ -87,18 +87,25 @@ class _ProjectCardState extends State<_ProjectCard> {
                     children: [
                       Text(
                         p["name"]!,
-                        style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.textWhite),
+                        style: GoogleFonts.poppins(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.textWhite),
                       ),
                       const SizedBox(height: 4),
                       Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 3),
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 10, vertical: 3),
                         decoration: BoxDecoration(
                           color: c.withOpacity(0.2),
                           borderRadius: BorderRadius.circular(10),
                         ),
                         child: Text(
                           p["type"]!,
-                          style: GoogleFonts.poppins(fontSize: 11, color: c, fontWeight: FontWeight.w600),
+                          style: GoogleFonts.poppins(
+                              fontSize: 11,
+                              color: c,
+                              fontWeight: FontWeight.w600),
                         ),
                       ),
                     ],
@@ -108,13 +115,12 @@ class _ProjectCardState extends State<_ProjectCard> {
             ),
           ),
 
-          // ── Body ────────────────────────────────────────────────
+          // Body section
           Padding(
             padding: const EdgeInsets.all(20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-
                 // Tech stack
                 Row(
                   children: [
@@ -122,7 +128,8 @@ class _ProjectCardState extends State<_ProjectCard> {
                     const SizedBox(width: 6),
                     Text(
                       p["tech"]!,
-                      style: GoogleFonts.poppins(fontSize: 13, color: c, fontWeight: FontWeight.w500),
+                      style: GoogleFonts.poppins(
+                          fontSize: 13, color: c, fontWeight: FontWeight.w500),
                     ),
                   ],
                 ),
@@ -131,18 +138,21 @@ class _ProjectCardState extends State<_ProjectCard> {
                 // Description
                 Text(
                   p["description"]!,
-                  style: GoogleFonts.poppins(fontSize: 13, color: AppColors.textGrey, height: 1.65),
+                  style: GoogleFonts.poppins(
+                      fontSize: 13, color: AppColors.textGrey, height: 1.65),
                   maxLines: _showMore ? null : 3,
-                  overflow: _showMore ? TextOverflow.visible : TextOverflow.ellipsis,
+                  overflow:
+                      _showMore ? TextOverflow.visible : TextOverflow.ellipsis,
                 ),
                 const SizedBox(height: 10),
 
-                // Show more / less
+                // Show more  / Less
                 GestureDetector(
                   onTap: () => setState(() => _showMore = !_showMore),
                   child: Text(
                     _showMore ? "Show less ↑" : "Show more ↓",
-                    style: GoogleFonts.poppins(fontSize: 12, color: c, fontWeight: FontWeight.w600),
+                    style: GoogleFonts.poppins(
+                        fontSize: 12, color: c, fontWeight: FontWeight.w600),
                   ),
                 ),
               ],

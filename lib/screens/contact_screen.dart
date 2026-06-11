@@ -13,8 +13,8 @@ class ContactScreen extends StatefulWidget {
 }
 
 class _ContactScreenState extends State<ContactScreen> {
-  final _nameCtrl    = TextEditingController();
-  final _emailCtrl   = TextEditingController();
+  final _nameCtrl = TextEditingController();
+  final _emailCtrl = TextEditingController();
   final _messageCtrl = TextEditingController();
   bool _sent = false;
 
@@ -27,7 +27,9 @@ class _ContactScreenState extends State<ContactScreen> {
   }
 
   void _submit() {
-    if (_nameCtrl.text.trim().isEmpty || _emailCtrl.text.trim().isEmpty || _messageCtrl.text.trim().isEmpty) {
+    if (_nameCtrl.text.trim().isEmpty ||
+        _emailCtrl.text.trim().isEmpty ||
+        _messageCtrl.text.trim().isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text("Please fill all fields", style: GoogleFonts.poppins()),
@@ -59,36 +61,77 @@ class _ContactScreenState extends State<ContactScreen> {
         children: [
           const SectionTitle("Contact Me"),
           const SizedBox(height: 8),
-          Text("Let's work together!", style: GoogleFonts.poppins(fontSize: 13, color: AppColors.textGrey)),
+          Text("Let's work together!",
+              style:
+                  GoogleFonts.poppins(fontSize: 13, color: AppColors.textGrey)),
           const SizedBox(height: 28),
 
-          // ── Contact Info Cards ─────────────────────────────────────
-          _ContactInfoCard(icon: Icons.mail_outline, label: "Email", value: AppData.email,    color: AppColors.primary,   onTap: () => _copyToClipboard(AppData.email)),
+          // ─Contact And mail info
+          _ContactInfoCard(
+              icon: Icons.mail_outline,
+              label: "Email",
+              value: AppData.email,
+              color: AppColors.primary,
+              onTap: () => _copyToClipboard(AppData.email)),
           const SizedBox(height: 12),
-          _ContactInfoCard(icon: Icons.phone_outlined, label: "Phone", value: AppData.phone,  color: AppColors.secondary, onTap: () => _copyToClipboard(AppData.phone)),
+          _ContactInfoCard(
+              icon: Icons.phone_outlined,
+              label: "Phone",
+              value: AppData.phone,
+              color: AppColors.secondary,
+              onTap: () => _copyToClipboard(AppData.phone)),
           const SizedBox(height: 12),
-          _ContactInfoCard(icon: Icons.link, label: "GitHub", value: "github.com/vidhimochi",  color: AppColors.accent,    onTap: () => _copyToClipboard(AppData.github)),
+          _ContactInfoCard(
+              icon: Icons.link,
+              label: "GitHub",
+              value: "https://github.com/FlutterApp0908",
+              color: AppColors.accent,
+              onTap: () => _copyToClipboard(AppData.github)),
           const SizedBox(height: 12),
-          _ContactInfoCard(icon: Icons.link, label: "LinkedIn", value: "linkedin.com/in/vidhimochi", color: const Color(0xFF0077B5), onTap: () => _copyToClipboard(AppData.linkedin)),
+          _ContactInfoCard(
+              icon: Icons.link,
+              label: "LinkedIn",
+              value: "https://www.linkedin.com/in/vidhi-mochi",
+              color: const Color(0xFF0077B5),
+              onTap: () => _copyToClipboard(AppData.linkedin)),
 
           const SizedBox(height: 28),
 
-          // ── Contact Form ───────────────────────────────────────────
+          // Contact form
           if (!_sent) ...[
-            Text("Send a Message", style: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.textWhite)),
+            Text("Send a Message",
+                style: GoogleFonts.poppins(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                    color: AppColors.textWhite)),
             const SizedBox(height: 16),
-
             PortfolioCard(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _InputField(controller: _nameCtrl,    label: "Your Name",    hint: "e.g. Rahul Shah",         icon: Icons.person_outline),
+                  _InputField(
+                      controller: _nameCtrl,
+                      label: "Your Name",
+                      hint: "e.g. John doe",
+                      icon: Icons.person_outline),
                   const SizedBox(height: 16),
-                  _InputField(controller: _emailCtrl,   label: "Your Email",   hint: "e.g. rahul@email.com",    icon: Icons.mail_outline),
+                  _InputField(
+                      controller: _emailCtrl,
+                      label: "Your Email",
+                      hint: "e.g. John@email.com",
+                      icon: Icons.mail_outline),
                   const SizedBox(height: 16),
-                  _InputField(controller: _messageCtrl, label: "Message",      hint: "Hi Vidhi, I'd like to…",  icon: Icons.message_outlined, maxLines: 5),
+                  _InputField(
+                      controller: _messageCtrl,
+                      label: "Message",
+                      hint: "Hi Vidhi, I'd like to…",
+                      icon: Icons.message_outlined,
+                      maxLines: 5),
                   const SizedBox(height: 20),
-                  PrimaryButton(label: "Send Message", icon: Icons.send_outlined, onTap: _submit),
+                  PrimaryButton(
+                      label: "Send Message",
+                      icon: Icons.send_outlined,
+                      onTap: _submit),
                 ],
               ),
             ),
@@ -97,18 +140,34 @@ class _ContactScreenState extends State<ContactScreen> {
             PortfolioCard(
               child: Column(
                 children: [
-                  const Icon(Icons.check_circle_outline, color: AppColors.accent, size: 56),
+                  const Icon(Icons.check_circle_outline,
+                      color: AppColors.accent, size: 56),
                   const SizedBox(height: 16),
-                  Text("Message Sent!", style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w700, color: AppColors.textWhite)),
+                  Text("Message Sent!",
+                      style: GoogleFonts.poppins(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.textWhite)),
                   const SizedBox(height: 8),
-                  Text("Thank you for reaching out. I'll get back to you soon!", textAlign: TextAlign.center, style: GoogleFonts.poppins(fontSize: 13, color: AppColors.textGrey, height: 1.6)),
+                  Text("Thank you for reaching out. I'll get back to you soon!",
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          fontSize: 13,
+                          color: AppColors.textGrey,
+                          height: 1.6)),
                   const SizedBox(height: 20),
                   GestureDetector(
                     onTap: () {
-                      _nameCtrl.clear(); _emailCtrl.clear(); _messageCtrl.clear();
+                      _nameCtrl.clear();
+                      _emailCtrl.clear();
+                      _messageCtrl.clear();
                       setState(() => _sent = false);
                     },
-                    child: Text("Send another →", style: GoogleFonts.poppins(fontSize: 13, color: AppColors.primary, fontWeight: FontWeight.w600)),
+                    child: Text("Send another →",
+                        style: GoogleFonts.poppins(
+                            fontSize: 13,
+                            color: AppColors.primary,
+                            fontWeight: FontWeight.w600)),
                   ),
                 ],
               ),
@@ -117,7 +176,7 @@ class _ContactScreenState extends State<ContactScreen> {
 
           const SizedBox(height: 28),
 
-          // ── Availability ───────────────────────────────────────────
+          // Availability
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(20),
@@ -131,18 +190,21 @@ class _ContactScreenState extends State<ContactScreen> {
                 Container(
                   width: 10,
                   height: 10,
-                  decoration: const BoxDecoration(shape: BoxShape.circle, color: AppColors.accent),
+                  decoration: const BoxDecoration(
+                      shape: BoxShape.circle, color: AppColors.accent),
                 ),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Text(
                     "Available for work — Open to internships, full-time, or freelance projects.",
-                    style: GoogleFonts.poppins(fontSize: 13, color: AppColors.textGrey, height: 1.5),
+                    style: GoogleFonts.poppins(
+                        fontSize: 13, color: AppColors.textGrey, height: 1.5),
                   ),
                 ),
               ],
             ),
           ),
+          const SizedBox(height: 75),
         ],
       ),
     );
@@ -156,7 +218,12 @@ class _ContactInfoCard extends StatelessWidget {
   final Color color;
   final VoidCallback onTap;
 
-  const _ContactInfoCard({required this.icon, required this.label, required this.value, required this.color, required this.onTap});
+  const _ContactInfoCard(
+      {required this.icon,
+      required this.label,
+      required this.value,
+      required this.color,
+      required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -172,8 +239,10 @@ class _ContactInfoCard extends StatelessWidget {
         child: Row(
           children: [
             Container(
-              width: 40, height: 40,
-              decoration: BoxDecoration(shape: BoxShape.circle, color: color.withOpacity(0.12)),
+              width: 40,
+              height: 40,
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle, color: color.withOpacity(0.12)),
               child: Icon(icon, color: color, size: 20),
             ),
             const SizedBox(width: 14),
@@ -181,8 +250,17 @@ class _ContactInfoCard extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(label, style: GoogleFonts.poppins(fontSize: 11, color: AppColors.textMuted, fontWeight: FontWeight.w500)),
-                  Text(value, style: GoogleFonts.poppins(fontSize: 14, color: AppColors.textWhite, fontWeight: FontWeight.w500), overflow: TextOverflow.ellipsis),
+                  Text(label,
+                      style: GoogleFonts.poppins(
+                          fontSize: 11,
+                          color: AppColors.textMuted,
+                          fontWeight: FontWeight.w500)),
+                  Text(value,
+                      style: GoogleFonts.poppins(
+                          fontSize: 14,
+                          color: AppColors.textWhite,
+                          fontWeight: FontWeight.w500),
+                      overflow: TextOverflow.ellipsis),
                 ],
               ),
             ),
@@ -201,14 +279,23 @@ class _InputField extends StatelessWidget {
   final IconData icon;
   final int maxLines;
 
-  const _InputField({required this.controller, required this.label, required this.hint, required this.icon, this.maxLines = 1});
+  const _InputField(
+      {required this.controller,
+      required this.label,
+      required this.hint,
+      required this.icon,
+      this.maxLines = 1});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(label, style: GoogleFonts.poppins(fontSize: 13, color: AppColors.textGrey, fontWeight: FontWeight.w500)),
+        Text(label,
+            style: GoogleFonts.poppins(
+                fontSize: 13,
+                color: AppColors.textGrey,
+                fontWeight: FontWeight.w500)),
         const SizedBox(height: 8),
         TextField(
           controller: controller,
@@ -216,14 +303,25 @@ class _InputField extends StatelessWidget {
           style: GoogleFonts.poppins(fontSize: 14, color: AppColors.textWhite),
           decoration: InputDecoration(
             hintText: hint,
-            hintStyle: GoogleFonts.poppins(fontSize: 13, color: AppColors.textMuted),
-            prefixIcon: maxLines == 1 ? Icon(icon, color: AppColors.textMuted, size: 18) : null,
+            hintStyle:
+                GoogleFonts.poppins(fontSize: 13, color: AppColors.textMuted),
+            prefixIcon: maxLines == 1
+                ? Icon(icon, color: AppColors.textMuted, size: 18)
+                : null,
             filled: true,
             fillColor: AppColors.background,
-            contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-            border: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: const BorderSide(color: AppColors.cardBorder)),
-            enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: const BorderSide(color: AppColors.cardBorder)),
-            focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: const BorderSide(color: AppColors.primary, width: 1.5)),
+            contentPadding:
+                const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+            border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide: const BorderSide(color: AppColors.cardBorder)),
+            enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide: const BorderSide(color: AppColors.cardBorder)),
+            focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+                borderSide:
+                    const BorderSide(color: AppColors.primary, width: 1.5)),
           ),
         ),
       ],
