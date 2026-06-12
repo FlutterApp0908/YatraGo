@@ -838,7 +838,7 @@ p.a_n()
 return p},
 aAC(a){return new A.Zl($.ai,a)},
 amI(){var s,r,q,p,o=v.G,n=o.window,m=A.aAc(n.navigator)
-if(m==null||m.length===0)return B.nS
+if(m==null||m.length===0)return B.nR
 s=A.c([],t.ss)
 for(n=m.length,r=0;r<m.length;m.length===n||(0,A.y)(m),++r){q=m[r]
 p=new o.Intl.Locale(q)
@@ -6866,8 +6866,8 @@ s=B.c.dW((a-2)/1,0,13)
 r=B.i.dW(B.c.hx(s),0,12)
 q=s-r
 p=1-q
-o=B.nX[r]
-n=B.nX[r+1]
+o=B.nW[r]
+n=B.nW[r+1]
 return new A.a6(p*o.a+q*n.a,p*o.b+q*n.b)},
 aFc(a){var s,r,q,p,o,n,m
 if(a>5){s=a-5
@@ -10419,8 +10419,8 @@ break
 case 4:s=l.a
 s===$&&A.a()
 s=A.bd(s,200)
-r=A.bd(A.Ya(l,B.nT,B.Gh),24)
-q=A.bd(A.Ya(l,B.nT,B.GO),32)
+r=A.bd(A.Ya(l,B.nS,B.Gh),24)
+q=A.bd(A.Ya(l,B.nS,B.GO),32)
 p=A.bd(l.a,10)
 o=A.bd(l.a,12)
 l.d===$&&A.a()
@@ -10430,8 +10430,8 @@ break
 case 5:s=l.a
 s===$&&A.a()
 s=A.bd(A.xD(s+240),40)
-r=A.bd(A.Ya(l,B.nV,B.Hk),24)
-q=A.bd(A.Ya(l,B.nV,B.Hl),32)
+r=A.bd(A.Ya(l,B.nU,B.Hk),24)
+q=A.bd(A.Ya(l,B.nU,B.Hl),32)
 p=A.bd(l.a+15,8)
 o=A.bd(l.a+15,12)
 l.d===$&&A.a()
@@ -10758,7 +10758,7 @@ aqE(a,b,c){if(b!=null&&!b.j(0,B.a_))return A.aqc(b.bg(A.aAy(c)),a)
 return a},
 aAy(a){var s,r,q,p,o,n
 if(a<0)return 0
-for(s=0;r=B.nU[s],q=r.a,a>=q;){if(a===q||s+1===6)return r.b;++s}p=B.nU[s-1]
+for(s=0;r=B.nT[s],q=r.a,a>=q;){if(a===q||s+1===6)return r.b;++s}p=B.nT[s-1]
 o=p.a
 n=p.b
 return n+(a-o)/(q-o)*(r.b-n)},
@@ -34910,11 +34910,11 @@ gTs(){var s=this.a
 if(s instanceof A.el)return s
 return this.a=new A.el(s)},
 gakT(){var s,r,q,p,o,n=this
-if(n.c===1)return B.nY
+if(n.c===1)return B.nX
 s=n.d
 r=J.bg(s)
 q=r.gF(s)-J.cj(n.e)-n.f
-if(q===0)return B.nY
+if(q===0)return B.nX
 p=[]
 for(o=0;o<q;++o)p.push(r.h(s,o))
 p.$flags=3
@@ -43880,7 +43880,7 @@ n=o.e
 o=o.cx
 r=q.ga7e()
 q.a.toString
-return new A.AO(p,p,p,new A.ag8(),p,p,p,p,p,n,B.Jb,p,p,p,B.H6,q.ga7l(),o,p,B.Rq,s,p,r,p,p,B.nS,!1,!1,p,p,p,new A.nB(q,t.bT))},
+return new A.AO(p,p,p,new A.ag8(),p,p,p,p,p,n,B.Jb,p,p,p,B.H6,q.ga7l(),o,p,B.Rq,s,p,r,p,p,B.nR,!1,!1,p,p,p,new A.nB(q,t.bT))},
 K(a){var s,r=this.a0v(a)
 this.a.toString
 s=this.d
@@ -53248,8 +53248,8 @@ s=r.R
 r.dX=s==null?null:s.gHF()
 a.a=!1},
 ow(a,b,c){var s,r,q,p,o=this
-o.jA=A.asf(o.jA,B.nZ)
-o.hw=A.asf(o.hw,B.nZ)
+o.jA=A.asf(o.jA,B.nY)
+o.hw=A.asf(o.hw,B.nY)
 s=o.jA
 r=s!=null&&!s.ga1(s)
 s=o.hw
@@ -79899,7 +79899,7 @@ A.a0h.prototype={
 $0(){return this.a.c.$1(2)},
 $S:0}
 A.a0i.prototype={
-$1(a){return new A.c8(B.n5,new A.Oi(B.nR[a],[B.r,B.aG][a],null),null)},
+$1(a){return new A.c8(B.n5,new A.Oi(B.nZ[a],[B.r,B.aG][a],null),null)},
 $S:177}
 A.a0j.prototype={
 $0(){return this.a.c.$1(1)},
@@ -79945,7 +79945,7 @@ B.b.P(r,A.Iw(5,new A.a5C(),!0,t.l7))
 r.push(B.yO)
 return A.zv(A.bN(r,B.E,B.t,B.u),B.ev)}}
 A.a5C.prototype={
-$1(a){return new A.c8(B.DF,new A.Cy(B.nR[a],B.nW[B.i.bp(a,5)],null),null)},
+$1(a){return new A.c8(B.DF,new A.Cy(B.nZ[a],B.nV[B.i.bp(a,5)],null),null)},
 $S:177}
 A.Cy.prototype={
 aj(){return new A.Qz()}}
@@ -80001,7 +80001,7 @@ $S:499}
 A.a9A.prototype={
 $1(a){var s=B.o0[a],r=B.Jk.h(0,s)
 if(r==null)r=70
-return new A.ud(s,r,B.nW[B.i.bp(a,5)],null)},
+return new A.ud(s,r,B.nV[B.i.bp(a,5)],null)},
 $S:500}
 A.ud.prototype={
 K(a){var s=null,r=this.d,q=this.e,p=t.p
@@ -83363,13 +83363,6 @@ B.Go=s([6.43023796,2.98020421],t.n)
 B.nQ=s([B.Gn,B.Fy,B.H9,B.Hb,B.Gf,B.Gk,B.GJ,B.Gr,B.GC,B.Gi,B.Go],t.zg)
 B.Ge=s([B.iL,B.iM],A.am("z<v3>"))
 B.Gh=s([18,15,10,12,15,18,15,12,12],t.n)
-B.eV={name:0,tech:1,description:2,type:3,emoji:4}
-B.Jd=new A.bk(B.eV,["Lazeez \u2013 Food Delivery Website","PHP \xb7 MySQL \xb7 HTML/CSS","A full-featured food delivery website where users can browse menus, add items to cart, place orders, and track delivery. Admin panel included for restaurant management.","Web App",""],t.J)
-B.Jf=new A.bk(B.eV,["Portfolio Website","PHP \xb7 HTML/CSS \xb7 JavaScript","A personal portfolio website built with PHP showcasing projects, skills, and contact information with a clean responsive design.","Web App",""],t.J)
-B.Jh=new A.bk(B.eV,["YatraGo \u2013 Travel App","Flutter \xb7 Dart \xb7 Firebase",u._,"Mobile App",""],t.J)
-B.Jg=new A.bk(B.eV,["Family Expense Tracker","Flutter \xb7 Dart \xb7 SQLite","A family budget management app where members can log expenses, set budgets per category, and view monthly summaries with simple charts.","Mobile App",""],t.J)
-B.Je=new A.bk(B.eV,["Furniture Website","Figma \xb7 HTML/CSS","A complete furniture e-commerce website UI/UX designed in Figma and developed with HTML/CSS. Includes product pages, cart, and checkout flow.","UI/UX + Web",""],t.J)
-B.nR=s([B.Jd,B.Jf,B.Jh,B.Jg,B.Je],t.m0)
 B.Gl=s([1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298],t.t)
 B.aC=new A.e6(0,"icon")
 B.aR=new A.e6(1,"input")
@@ -83384,26 +83377,26 @@ B.bA=new A.e6(9,"counter")
 B.cx=new A.e6(10,"container")
 B.Gp=s([B.aC,B.aR,B.a9,B.aZ,B.b_,B.b0,B.a5,B.aL,B.bz,B.bA,B.cx],A.am("z<e6>"))
 B.Hu=new A.jS("en",null,"US")
-B.nS=s([B.Hu],t.ss)
-B.nT=s([0,41,61,101,131,181,251,301,360],t.n)
+B.nR=s([B.Hu],t.ss)
+B.nS=s([0,41,61,101,131,181,251,301,360],t.n)
 B.Vh=new A.kB(0,0)
 B.Vm=new A.kB(1,0.05)
 B.Vk=new A.kB(3,0.08)
 B.Vl=new A.kB(6,0.11)
 B.Vj=new A.kB(8,0.12)
 B.Vi=new A.kB(12,0.14)
-B.nU=s([B.Vh,B.Vm,B.Vk,B.Vl,B.Vj,B.Vi],A.am("z<kB>"))
+B.nT=s([B.Vh,B.Vm,B.Vk,B.Vl,B.Vj,B.Vi],A.am("z<kB>"))
 B.u7={degree:0,EduPlace:1,year:2}
 B.J7=new A.bk(B.u7,["Bachelor of Science(Computer Application & Information Technology)","Hemchandracharya North Gujarat University , Patan","2022 \u2013 2025"],t.J)
 B.J6=new A.bk(B.u7,["Software Mobile Application Developement With AI (Prompt Engineering)","TCP India Official , Mehsana","June 2025 - June 2026 "],t.J)
 B.Gq=s([B.J7,B.J6],t.m0)
-B.nV=s([0,21,51,121,151,191,271,321,360],t.n)
+B.nU=s([0,21,51,121,151,191,271,321,360],t.n)
 B.zY=new A.FO(2,"outer")
 B.mx=new A.C(0.09803921568627451,0,0,0,B.f)
 B.h=new A.h(0,0)
 B.Ae=new A.cV(0.2,B.zY,B.mx,B.h,11)
 B.Gz=s([B.Ae],t.sq)
-B.nW=s([B.r,B.aG,B.aN,B.ej,B.iU],t.t_)
+B.nV=s([B.r,B.aG,B.aN,B.ej,B.iU],t.t_)
 B.yR=new A.zS(0,"left")
 B.yS=new A.zS(1,"right")
 B.GB=s([B.yR,B.yS],A.am("z<zS>"))
@@ -83441,7 +83434,7 @@ B.LV=new A.a6(0.63903989,0.07759639)
 B.LC=new A.a6(0.66416338,0.0734653)
 B.Lz=new A.a6(0.68675338,0.06974996)
 B.LP=new A.a6(0.70678034,0.06529512)
-B.nX=s([B.LT,B.LS,B.LF,B.LI,B.LR,B.Ly,B.LD,B.LG,B.LB,B.LO,B.LV,B.LC,B.Lz,B.LP],A.am("z<+(F,F)>"))
+B.nW=s([B.LT,B.LS,B.LF,B.LI,B.LR,B.Ly,B.LD,B.LG,B.LB,B.LO,B.LV,B.LC,B.Lz,B.LP],A.am("z<+(F,F)>"))
 B.GO=s([35,30,20,25,30,35,30,25,25],t.n)
 B.GR=s(["click","scroll"],t.s)
 B.Ak=new A.pR()
@@ -83449,7 +83442,7 @@ B.f1=new A.Kz(1,"page")
 B.hP=new A.dR(B.aS,B.f1)
 B.GS=s([B.Ak,B.hP],A.am("z<aJ>"))
 B.H_=s([],t.QP)
-B.nZ=s([],A.am("z<aJL>"))
+B.nY=s([],A.am("z<aJL>"))
 B.H3=s([],t.D)
 B.H4=s([],t.fJ)
 B.H1=s([],t.ER)
@@ -83465,8 +83458,15 @@ B.H0=s([],t.Lx)
 B.H5=s([],t.AS)
 B.WJ=s([],t.p)
 B.GV=s([],t.t)
-B.nY=s([],t.ee)
+B.nX=s([],t.ee)
 B.H2=s([],t.XS)
+B.eV={name:0,tech:1,description:2,type:3,emoji:4}
+B.Je=new A.bk(B.eV,["Lazeez \u2013 Food Delivery Website","PHP \xb7 MySQL \xb7 HTML/CSS","A full-featured food delivery website where users can browse menus, add items to cart, place orders, and track delivery. Admin panel included for restaurant management.","Web App","\ud83c\udf55"],t.J)
+B.Jh=new A.bk(B.eV,["Portfolio Website","PHP \xb7 HTML/CSS \xb7 JavaScript","A personal portfolio website built with PHP showcasing projects, skills, and contact information with a clean responsive design.","Web App","\ud83d\udc69\u200d\ud83d\udcbb"],t.J)
+B.Jd=new A.bk(B.eV,["YatraGo \u2013 Travel App","Flutter \xb7 Dart \xb7 Firebase",u._,"Mobile App","\ud83d\ude8f"],t.J)
+B.Jf=new A.bk(B.eV,["Family Expense Tracker","Flutter \xb7 Dart \xb7 SQLite","A family budget management app where members can log expenses, set budgets per category, and view monthly summaries with simple charts.","Mobile App","\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66"],t.J)
+B.Jg=new A.bk(B.eV,["Furniture Website","Figma \xb7 HTML/CSS","A complete furniture e-commerce website UI/UX designed in Figma and developed with HTML/CSS. Includes product pages, cart, and checkout flow.","UI/UX + Web","\ud83d\udecb\ufe0f"],t.J)
+B.nZ=s([B.Je,B.Jh,B.Jd,B.Jf,B.Jg],t.m0)
 B.JX=new A.h(0,2)
 B.Ad=new A.cV(0.75,B.da,B.mx,B.JX,1.5)
 B.Hc=s([B.Ad],t.sq)

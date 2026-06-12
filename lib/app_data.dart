@@ -37,7 +37,7 @@ class AppData {
       "description":
           "A full-featured food delivery website where users can browse menus, add items to cart, place orders, and track delivery. Admin panel included for restaurant management.",
       "type": "Web App",
-      "emoji": "",
+      "emoji": "🍕",
     },
     {
       "name": "Portfolio Website",
@@ -45,7 +45,7 @@ class AppData {
       "description":
           "A personal portfolio website built with PHP showcasing projects, skills, and contact information with a clean responsive design.",
       "type": "Web App",
-      "emoji": "",
+      "emoji": "👩‍💻",
     },
     {
       "name": "YatraGo – Travel App",
@@ -53,7 +53,7 @@ class AppData {
       "description":
           "Designed and developed YatraGo, a comprehensive BRTS transport management application using Flutter, Dart, and Firebase. The app enables users to book tickets online, manage student passes, view bus routes and schedules, track buses in real time, and access location-based transportation services through a modern and responsive interface.",
       "type": "Mobile App",
-      "emoji": "",
+      "emoji": "🚏",
     },
     {
       "name": "Family Expense Tracker",
@@ -61,7 +61,7 @@ class AppData {
       "description":
           "A family budget management app where members can log expenses, set budgets per category, and view monthly summaries with simple charts.",
       "type": "Mobile App",
-      "emoji": "",
+      "emoji": "👨‍👩‍👧‍👦",
     },
     {
       "name": "Furniture Website",
@@ -69,7 +69,7 @@ class AppData {
       "description":
           "A complete furniture e-commerce website UI/UX designed in Figma and developed with HTML/CSS. Includes product pages, cart, and checkout flow.",
       "type": "UI/UX + Web",
-      "emoji": "",
+      "emoji": "🛋️",
     },
   ];
 
