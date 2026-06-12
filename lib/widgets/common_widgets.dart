@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../app_colors.dart';
 
-// ── Section Title ─────────────────────────────────────────────────────────────
+//  Section Title 
 class SectionTitle extends StatelessWidget {
   final String title;
   const SectionTitle(this.title, {super.key});
@@ -34,7 +34,7 @@ class SectionTitle extends StatelessWidget {
   }
 }
 
-// ── Simple Card ───────────────────────────────────────────────────────────────
+// Simple card
 class PortfolioCard extends StatelessWidget {
   final Widget child;
   final EdgeInsetsGeometry? padding;
@@ -56,7 +56,7 @@ class PortfolioCard extends StatelessWidget {
   }
 }
 
-// ── Skill Chip ────────────────────────────────────────────────────────────────
+// Skill chips
 class SkillChip extends StatelessWidget {
   final String label;
   const SkillChip(this.label, {super.key});
@@ -82,7 +82,7 @@ class SkillChip extends StatelessWidget {
   }
 }
 
-// ── Purple Button ─────────────────────────────────────────────────────────────
+//  Purple Button 
 class PrimaryButton extends StatelessWidget {
   final String label;
   final VoidCallback onTap;
@@ -122,7 +122,7 @@ class PrimaryButton extends StatelessWidget {
   }
 }
 
-// ── Outline Button ────────────────────────────────────────────────────────────
+// Outline Button 
 class OutlineButton2 extends StatelessWidget {
   final String label;
   final VoidCallback onTap;
@@ -162,7 +162,7 @@ class OutlineButton2 extends StatelessWidget {
   }
 }
 
-// ── Info Row ──────────────────────────────────────────────────────────────────
+// Info Row 
 class InfoRow extends StatelessWidget {
   final IconData icon;
   final String text;
